@@ -2,9 +2,11 @@
 
 """Top-level package for spatialnc."""
 
-from pkg_resources import DistributionNotFound, get_distribution
+"""Top-level package for spatialnc."""
+
+from importlib.metadata import version, PackageNotFoundError
 
 try:
-    __version__ = get_distribution(__name__).version
-except DistributionNotFound:
-    __version__ = 'unknown'
+    __version__ = version("spatialnc")
+except PackageNotFoundError:
+    __version__ = "unknown"
