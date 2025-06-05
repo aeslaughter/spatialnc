@@ -2,7 +2,6 @@
 
 """Top-level package for spatialnc."""
 
-"""Top-level package for spatialnc."""
 
 from importlib.metadata import version, PackageNotFoundError
 
